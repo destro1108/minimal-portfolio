@@ -1,0 +1,32 @@
+/* font imported from fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+/* colors */
+:root {
+  --color-primary: #111;
+  --color-secondary: #00bcd4;
+  --color-background: #fafafa;
+  --color-primary-dark: #eee;
+  --color-secondary-dark: #eee;
+  --color-background-dark: #111;
+}
+
+/* apply to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body element */
+body {
+  min-height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-size: calc(10px + 2vmin);
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
