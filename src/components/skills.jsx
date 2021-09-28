@@ -1,6 +1,6 @@
 import React from "react";
 
-const Skill = (props) => {
+export const Skill = (props) => {
   return <li className="skill"># {props.name}</li>;
 };
 
