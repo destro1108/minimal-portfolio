@@ -20,13 +20,74 @@
 
 /* body element */
 body {
-  min-height: 100vh;
   max-width: 1024px;
   margin: 0 auto;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   font-family: "Ubuntu", sans-serif;
   color: var(--color-primary);
   background-color: var(--color-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* removing anchor tag styles */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.4rem 0.6rem;
+}
+
+header > .brandName {
+  font-size: 2rem;
+}
+
+header > nav > ul {
+  flex: 1;
+  margin-top: 0.8rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home > .heroText {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: left;
+}
+
+/* media queries for larger screens */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    flex-direction: row;
+  }
+  header > nav > ul {
+    gap: 2rem;
+  }
 }
