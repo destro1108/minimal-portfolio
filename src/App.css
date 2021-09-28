@@ -4,7 +4,8 @@
 /* colors */
 :root {
   --color-primary: #111;
-  --color-secondary: #00bcd4;
+  --color-secondary: #44ab96;
+  --color-tertiary: #ff5678;
   --color-background: #fafafa;
   --color-primary-dark: #eee;
   --color-secondary-dark: #eee;
