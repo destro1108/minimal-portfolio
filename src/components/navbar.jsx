@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <header>
-      <div className="brandName">Swnnd.</div>
+      <div className="brandName">swnnd.</div>
       <nav className="mobileMenuList">
         <ul>
           <a href="#about">

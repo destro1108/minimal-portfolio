@@ -4,7 +4,8 @@
 /* colors */
 :root {
   --color-primary: #111;
-  --color-secondary: #00bcd4;
+  --color-secondary: #44ab96;
+  --color-tertiary: #ff5678;
   --color-background: #fafafa;
   --color-primary-dark: #eee;
   --color-secondary-dark: #eee;
@@ -55,6 +56,7 @@ header {
 
 header > .brandName {
   font-size: 2rem;
+  font-weight: 700;
 }
 
 header > nav > ul {
@@ -70,6 +72,8 @@ header > nav > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
 }
 
 .home > .heroText {
@@ -79,15 +83,59 @@ header > nav > ul {
   text-align: left;
 }
 
+.home > .heroText > .headTitle {
+  font-size: 1.6rem;
+}
+.home > .heroText > .title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subTitle {
+  font-size: 1rem;
+}
+.subTitle > #textCode {
+  color: var(--color-secondary);
+}
+
+.subTitle > #textMelody {
+  color: var(--color-tertiary);
+}
+
+.socialHandles {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.socialHandleIcon:hover,
+.socialHandleIcon:focus {
+  fill: var(--color-tertiary);
+  color: var(--color-tertiary);
+  transition: all 0.1s;
+}
+
 /* media queries for larger screens */
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 18px;
+  html {
+    font-size: 20px;
   }
   header {
     flex-direction: row;
   }
   header > nav > ul {
     gap: 2rem;
+  }
+  .home {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .home > img {
+    width: 50%;
+  }
+  .home > .heroText > .headTitle {
+    font-size: 2rem;
+  }
+  .home > .heroText > .title {
+    font-size: 2.4rem;
+    font-weight: 700;
   }
 }
