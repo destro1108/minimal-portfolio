@@ -67,6 +67,7 @@ header {
 header > .brandName {
   font-size: 2rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 header > nav > ul {
@@ -75,6 +76,11 @@ header > nav > ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+.activeSection {
+  font-weight: 700;
+  color: var(--color-secondary);
 }
 
 .home {
