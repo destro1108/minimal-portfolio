@@ -1,9 +1,14 @@
 import React from "react";
 
 const Navbar = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <header style={{ position: "sticky", top: 0 }}>
-      <div className="brandName">swnnd.</div>
+      <div className="brandName" onClick={handleScrollToTop}>
+        swnnd.
+      </div>
       <nav className="mobileMenuList">
         <ul>
           <a href="#about">
